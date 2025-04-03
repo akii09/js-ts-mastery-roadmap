@@ -10,6 +10,7 @@ import { ProgressBar } from "@/components/progress-bar"
 import { Button } from "@/components/ui/button"
 import { Download, Share2 } from "lucide-react"
 import { shareRoadmap, downloadAsPDF } from "@/lib/utils/roadmap-utils"
+import { registerServiceWorker } from "@/lib/utils/register-sw"
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -28,9 +29,10 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Fix hydration issues with theme
+  // Fix hydration issues with theme and register service worker
   useEffect(() => {
     setMounted(true)
+    registerServiceWorker()
   }, [])
 
   if (!mounted) {

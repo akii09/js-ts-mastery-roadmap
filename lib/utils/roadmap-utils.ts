@@ -62,10 +62,12 @@ export function downloadAsPDF() {
       description: "Your roadmap PDF is being downloaded...",
     })
 
+    const fileName = 'Ultimate-Roadmap-to-Mastering-JavaScript-&-TypeScript(2025-2026).pdf'
+
     // Create a link element
     const link = document.createElement('a')
-    link.href = '/Ultimate-Roadmap-to-Mastering-JavaScript-&-TypeScript(2025-2026).pdf'
-    link.download = 'Ultimate-Roadmap-to-Mastering-JavaScript-&-TypeScript(2025-2026).pdf'
+    link.href = `/${fileName}`
+    link.download = fileName
     
     // Append to body, click, and remove
     document.body.appendChild(link)
