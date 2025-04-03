@@ -279,7 +279,7 @@ export default function Home() {
 
             <div className="mt-16 mb-8 text-center">
               <p className="text-muted-foreground">Created with ❤️ for JavaScript and TypeScript developers</p>
-              <p className="text-xs text-muted-foreground mt-2">Last updated: April 2024</p>
+              <p className="text-xs text-muted-foreground mt-2">Last updated: April 2025</p>
             </div>
           </div>
         </div>
