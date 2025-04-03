@@ -81,7 +81,7 @@ export default function Home() {
               <RoadmapPhase
                 phase="1"
                 title="Master Advanced JavaScript"
-                description="Even if you have 4+ years of experience, going deeper will give you an edge over other developers."
+                description="Regardless of your experience level, diving deeper will give you a competitive edge and enhance your expertise."
                 steps={[
                   {
                     title: "JavaScript Deep Dive",
